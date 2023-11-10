@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.animation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-in {
+    animation: slideIn 1.5s forwards;
+    opacity: 0;
+    transform: translateX(100%);
+    margin-bottom: 20px;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1.5s forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
